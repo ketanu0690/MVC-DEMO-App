@@ -1,0 +1,25 @@
+﻿@model List<DemoMVCApplication.Models.Dto.UserDto>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.Name</td>
+                <td>@user.Email</td>
+                <td>@user.Gender</td>
+                <td>@user.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>
